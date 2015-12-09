@@ -37,6 +37,9 @@ for lang in en; do #$(ls -d ?? ??_??); do
     [ -d ../live/$lang ] && mv ../live/$lang ../live/$lang-old
     mv build/$lang/pear-web ../live/$lang
 
+    # manual feeds
+    mv build/$lang/pear-tocfeed ../live/$lang/feeds
+
     #download
     cd build/$lang
 
